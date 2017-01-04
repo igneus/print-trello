@@ -304,12 +304,12 @@ function closeXrefDiv(id)
 	var el = document.getElementById('xrefDiv' + id);
 	if (el) el.innerHTML = '';
 }
-	
+
 
 function printList(i,mode)
 {
 	var htm = [
-		'<link rel=stylesheet href=trello-print.css></link>',
+		'<link rel=stylesheet href=style.css></link>',
 		dpyList(i,mode,false),
 		''];
 
