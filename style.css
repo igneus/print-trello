@@ -1,15 +1,21 @@
 body{ 
 	line-height: 1.3; 
 	font-size: 85%;
+	font-family: Verdana, sans-serif;
 }
 
 
 
 .card-div {
 	margin-top: 8px;
-	border-bottom: 1px dashed gray;
+	border: 1px solid gray;
+	border-radius: 3px;
 	margin-left: 8px;
 	padding-left: 8px;
+}
+
+@media print {
+  .card-div { page-break-inside: avoid; }
 }
 
 .grocery {
@@ -85,4 +91,14 @@ ul.mini li {
 	.noprint { display:none; } 
 }
 
+.label-text {}
+.label-text.red { color: red; }
+.label-text.green { color: green; }
+.label-text.sky { color: cyan; }
+.label-text.gray { color: gray; }
 
+.label-block { display: inline-block; color: white; font-size: small; padding: 2px 3px; border-radius: 5px; }
+.label-block.red { background-color: red; }
+.label-block.green { background-color: green; }
+.label-block.sky { background-color: cyan; }
+.label-block.gray { background-color: gray; }

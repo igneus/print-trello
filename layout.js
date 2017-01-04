@@ -126,12 +126,12 @@ function dpyCard(cobj,cardId,mode)
 		var kobj = cobj.labels[k];
 		htm.push(' ');
 		if (x == 'show-color-block'){
-			htm.push('<span style="background:',kobj.color,'">&nbsp;&nbsp;&nbsp;</span>');
+			htm.push('<span class="label-block ',kobj.color,'">&nbsp;&nbsp;&nbsp;</span>');
 		}
 		else if (x == 'colored-text'){
-			htm.push(' <i style="color:', kobj.color,'">', kobj.name, '</i>');
+			htm.push(' <i class="label-text ', kobj.color,'">', kobj.name, '</i>');
 		}
-		else htm.push('<span style="background:',kobj.color,'">',kobj.name,'</span>');
+		else htm.push('<span class="label-block ',kobj.color,'">',kobj.name,'</span>');
 	   }
 	}
 
@@ -320,4 +320,3 @@ function printList(i,mode)
 	doc.close();
 	win.JS = window;
 }
-
